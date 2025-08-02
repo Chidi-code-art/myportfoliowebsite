@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0MP4SRK5E1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0MP4SRK5E1');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    
+
+    <!--THE NAV BAR FOR THE WEBSITE STARTS-->
+
+
+        <nav class="nav-bar">
+            <img src="{% static 'images/logo.png' %}" alt="logo" class="logo">
+            <ul class="center-nav">
+                <a href="{% url 'home' %}" class="nav-link"><h5>Home</h5></a>
+                <a href="{% url 'home' %}#services_phone" class="nav-link"><h5>Services</h5></a>
+                <a href="{% url 'home' %}#tablet-about-section" class="nav-link"><h5>About</h5></a>
+                <a href="{% url 'home' %}#tablet-projects-section" class="nav-link"><h5>Project</h5></a>
+                <a href="{% url 'home' %}#blog" class="nav-link"><h5>Blog</h5></a>
+                <a href="{% url 'home' %}#testimonials-section" class="nav-link"><h5>Testimonials</h5></a>
+            </ul>
+
+            <a href="{% url 'home' %}#desktop-contact-section" class="contact-me-link"><h5 class="contact-me-text">Contact me</h5></a>
+
+            <!-- Added menu toggle button -->
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+
+        <!-- Added side menu (place before closing body tag) -->
+        <div class="side-menu">
+            <div class="side-menu-content">
+                <a href="{% url 'home' %}" class="nav-link"><h5>Home</h5></a>
+                <a href="{% url 'home' %}#services_phone" class="nav-link"><h5>Services</h5></a>
+                <a href="{% url 'home' %}#about-section" class="nav-link"><h5>About</h5></a>
+                <a href="{% url 'home' %}#tablet-projects-section" class="nav-link"><h5>Project</h5></a>
+                <a href="{% url 'home' %}#blog" class="nav-link"><h5>Blog</h5></a>
+                <a href="{% url 'home' %}#testimonials-section" class="nav-link"><h5>Testimonials</h5></a>
+            </div>
+        </div>
+
+
+
+
+    <!--THE NAV BAR FOR THE WEBSITE ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+<!--THE BANNER (DESKTOP VIEW) BEGINS-->
+
+
+<section id="banner_desktop">
+
+
+            <div class="banner-disc">
+
+
+                <img src="{% static 'images/Banner_tag.png' %}" alt="" class="banner-tag">
+
+                <div class="banner-disc-bold">
+
+                    <h1 class="banner-disc-bold-text">
+
+                        I’m <span class="banner-disc-bold-change-color">Umeh Jason,</span>
+                        a UIUX designer & Web developer Based in <span class="banner-disc-bold-change-color2">Nigeria.</span> 
+
+                    </h1>
+
+                </div>
+
+                <div class="banner-disc-thin">
+
+                    <h3 class="banner-disc-thin-text">
+                        With 3+ years of experience as a UI/UX Designer and Web Developer, I’ve had the opportunity to work with a wide range of companies and individuals to bring ideas to life.
+                    </h3>
+
+                </div>
+
+                <div class="banner-disc-btn">
+                    <a href="{% url 'home' %}#services_phone"><h4 class="banner-disc-btn-text">See more</h4></a>
+                </div>
+
+
+            </div>
+
+
+
+
+            <img src="{% static 'images/banner_img.jpg' %}" alt="banner-img" class="banner-img">
+
+
+        </section>
+
+
+<!--THE BANNER (DESKTOP VIEW) ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--THE BANNER (PHONE VIEW) BEGINS-->
+
+
+        <section id="banner_phone">
+
+
+            <div class="banner-disc">
+
+
+                <img src="{% static 'images/Banner_tag.png' %}" alt="" class="banner-tag">
+
+                <div class="banner-disc-bold">
+
+                    <h1 class="banner-disc-bold-text">
+
+                        I’m <span class="banner-disc-bold-change-color">Umeh Jason,</span>
+                        a UIUX designer & Web developer Based in <span class="banner-disc-bold-change-color2">Nigeria.</span> 
+
+                    </h1>
+
+                </div>
+
+                <div class="banner-disc-thin">
+
+                    <h3 class="banner-disc-thin-text">
+                        With 3+ years of experience as a UI/UX Designer and Web Developer, I’ve had the opportunity to work with a wide range of companies and individuals to bring ideas to life.
+                    </h3>
+
+                </div>
+
+                <div class="banner-disc-btn">
+                    <a href="{% url 'home' %}#services_phone"><h4 class="banner-disc-btn-text">See more</h4></a>
+                </div>
+
+
+            </div>
+
+
+
+
+            <img src="{% static 'images/banner_img.jpg' %}" alt="banner-img" class="banner-img">
+
+
+        </section>
+
+
+<!--THE BANNER (PHONE VIEW) ENDS-->
+
+
+
+
+
+
+
+
+
+<!--THE SERVICES (PHONE VIEW) BEGINS-->
+
+
+<section id="services_phone">
+
+
+    <img src="{% static 'images/service_tag.png' %}" alt="" class="banner-tag">
+
+    <h2 class="service-header"> <span class="service-text-change"> Services </span>I Provide</h2>
+
+ <!--Slider begins-->
+    <div class="slider-container">
+        <div class="slider-track">
+            <div class="services-card">
+
+                <div class="service-card-img-box">
+
+                    <img src="https://img.icons8.com/?size=100&id=5ch3LpkvRoXk&format=png&color=E3BD3F" alt="" class="service-icon">
+
+                </div>
+
+                <div class="service-card-disc">
+
+                    <h4 class="service-card-header">UIUX Design</h4>
+
+                    <h5 class="service-card-disc">
+                        I love bringing ideas to life by blending colors, fonts, texts, images, and more. Hire me, and experience the beauty of my creativity.
+                    </h5>
+
+                    <a href="{% url 'home' %}#tablet-projects-section" class="service-card-link">
+                        <h5>See more</h5>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!--Second card-->
+            <div class="services-card">
+
+                <div class="service-card-img-box">
+
+                    <img src="https://img.icons8.com/?size=100&id=wWh3KNXLFm0y&format=png&color=E3BD3F" alt="" class="service-icon">
+
+                </div>
+
+                <div class="service-card-disc">
+
+                    <h4 class="service-card-header">Web Development</h4>
+
+                    <h5 class="service-card-disc">
+                        Web development, to me, is not just about coding, coding, coding..., it is about bringing beautifully crafted designs to life.
+                    </h5>
+
+                    <a href="{% url 'home' %}#tablet-projects-section" class="service-card-link">
+                        <h5>See more</h5>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--Third card-->
+            <div class="services-card">
+
+                <div class="service-card-img-box">
+
+                    <img src="https://img.icons8.com/?size=100&id=7687&format=png&color=E3BD3F" alt="" class="service-icon">
+
+                </div>
+
+                <div class="service-card-disc">
+
+                    <h4 class="service-card-header">Graphics Design</h4>
+
+                    <h5 class="service-card-disc">
+                        You share your idea, and I'll present you with a variety of design options. Creativity isn't just my skill - it's my passion.
+                    </h5>
+
+                    <a href="{% url 'home' %}#tablet-projects-section" class="service-card-link">
+                        <h5>See more</h5>
+                    </a>
+
+                </div>
+
+            </div>
+        
+        </div>
+
+    </div>
+
+
+        <!-- Navigation buttons -->
+    <div class="slider-nav">
+        <button id="prevBtn">&#10094;</button>
+        <span id="slider-indicator">1 / 3</span>
+        <button id="nextBtn">&#10095;</button>
+    </div>
+
+</section>
+
+
+<!--THE SERVICES (PHONE VIEW) ENDS-->
+
+
+
+
+
+<!--THE ABOUT (PHONE VIEW) BEGINS-->
+
+
+    <section id="about-section">
+
+
+        <div class="about-disc">
+
+            <h2 class="about-disc-header">
+
+                Who is <span class="about-disc-header-change">Umeh Jason?</span>
+
+            </h2>
+
+
+            <h4 class="about-disc-info">
+                        With 3+ years of experience as a UI/UX Designer and Web Developer, I’ve had the opportunity to work with a wide range of companies and individuals to bring ideas to life.
+            </h4>
+
+
+            <div class="about-disc-counters">
+
+                <div class="about-disc-count1">
+
+                    <h2 class="about-disc-num">10+</h2>
+
+
+                    <h4 class="about-disc-counter-info">
+                        Projects Covered
+                    </h4>
+
+                </div>
+
+
+                <div class="about-disc-count1">
+
+                    <h2 class="about-disc-num">3+</h2>
+
+
+                    <h4 class="about-disc-counter-info">
+                        Years of Experience
+                    </h4>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-disc-btn">
+                    <a href="{% url 'home' %}#tablet-projects-section"><h4 class="about-disc-btn-text">See more</h4></a>
+            </div>
+
+        </div>
+
+
+        <img src="{% static 'images/banner_img.jpg' %}" alt="" class="about-img">
+
+
+    </section>
+
+
+<!--THE ABOUT (PHONE VIEW) ENDS-->
+
+
+
+
+
+
+
+
+<!--THE ABOUT (TABLET VIEW) BEGINS-->
+
+
+
+<section id="tablet-about-section">
+
+
+        <div class="about-disc">
+
+            <h2 class="about-disc-header">
+
+                Who is <span class="about-disc-header-change">Umeh Jason?</span>
+
+            </h2>
+
+
+            <h4 class="about-disc-info">
+                        With 3+ years of experience as a UI/UX Designer and Web Developer, I’ve had the opportunity to work with a wide range of companies and individuals to bring ideas to life.
+            </h4>
+
+
+            <div class="about-disc-counters">
+
+                <div class="about-disc-count1">
+
+                    <h2 class="about-disc-num">10+</h2>
+
+
+                    <h4 class="about-disc-counter-info">
+                        Projects Covered
+                    </h4>
+
+                </div>
+
+
+                <div class="about-disc-count1">
+
+                    <h2 class="about-disc-num">3+</h2>
+
+
+                    <h4 class="about-disc-counter-info">
+                        Years of Experience
+                    </h4>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-disc-btn"> 
+                    <a href="{% url 'home' %}#tablet-projects-section"><h4 class="about-disc-btn-text">See more</h4></a>
+            </div>
+
+        </div>
+
+
+        <img src="{% static 'images/banner_img.jpg' %}" alt="" class="about-img">
+
+
+    </section>
+
+
+
+<!--THE ABOUT (TABLET VIEW) ENDS-->
+
+
+
+
+
+<!--THE PROJECTS (PHONE VIEW) BEGINS-->
+
+
+    <section id="projects-section">
+
+
+        <h2 class="projects-section-header">
+
+            <span class="projects-section-header-change">
+                Latest 
+            </span> Projects
+
+        </h2>
+
+
+        <div class="projects-container">
+
+
+            <div class="projects-card">
+
+
+                <img src="{% static 'images/project3.jpg' %}" alt="" class="projects-card-img">
+
+
+                <div class="projects-card-detail">
+
+
+                    <div class="projects-card-tags">
+
+                       
+                            <h4 class="projects-card-tag1">Website</h4>
+
+                            <h4 class="projects-card-tag2">Blog</h4>
+                        
+
+                    </div>
+
+
+                    <h3 class="projects-card-name">
+                        <a href="https://ikemdinachi.my.id/">Writer's Blog</a>
+                    </h3>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!--Second project begins-->
+            <div class="projects-card">
+
+
+                <img src="{% static 'images/project2.jpg' %}" alt="" class="projects-card-img">
+
+
+                <div class="projects-card-detail">
+
+
+                    <div class="projects-card-tags">
+
+                       
+                            <h4 class="projects-card-tag1">Website</h4>
+
+                            <h4 class="projects-card-tag2">Blog</h4>
+                        
+
+                    </div>
+
+
+                    <h3 class="projects-card-name">
+                        <a href="https://christforall.my.id/">Catholic Blog</a>
+                    </h3>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!--Third project begins-->
+            <div class="projects-card">
+
+
+                <img src="{% static 'images/project1.jpg' %}" alt="" class="projects-card-img">
+
+
+                <div class="projects-card-detail">
+
+
+                    <div class="projects-card-tags">
+
+                       
+                            <h4 class="projects-card-tag1">UI Design</h4>
+
+                            <h4 class="projects-card-tag2">Business</h4>
+                        
+
+                    </div>
+
+
+                    <h3 class="projects-card-name">
+                        Website UI Designs
+                    </h3>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+<!--THE PROJECTS (PHONE VIEW) ENDS-->
+
+
+
+
+<!--THE PROJECTS SECTION (TABLET VIEW) BEGINS-->
+
+
+
+
+<section id="tablet-projects-section">
+
+
+        <h2 class="projects-section-header">
+
+            <span class="projects-section-header-change">
+                Latest 
+            </span> Projects
+
+        </h2>
+
+
+        <div class="projects-container">
+
+
+            <div class="projects-card">
+
+
+                <img src="{% static 'images/project3.jpg' %}" alt="" class="projects-card-img">
+
+
+                <div class="projects-card-detail">
+
+
+                    <div class="projects-card-tags">
+
+                       
+                            <h4 class="projects-card-tag1">Website</h4>
+
+                            <h4 class="projects-card-tag2">Blog</h4>
+                        
+
+                    </div>
+
+
+                    <h3 class="projects-card-name">
+                        <a href="https://ikemdinachi.my.id/">Writer's Blog</a>
+                    </h3>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!--Second project begins-->
+            <div class="projects-card">
+
+
+                <img src="{% static 'images/project2.jpg' %}" alt="" class="projects-card-img">
+
+
+                <div class="projects-card-detail">
+
+
+                    <div class="projects-card-tags">
+
+                       
+                            <h4 class="projects-card-tag1">Website</h4>
+
+                            <h4 class="projects-card-tag2">Blog</h4>
+                        
+
+                    </div>
+
+
+                    <h3 class="projects-card-name">
+                        <a href="https://christforall.my.id/">Catholic Blog</a>
+                    </h3>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!--Third project begins-->
+            <div class="projects-card">
+
+
+                <img src="{% static 'images/project1.jpg' %}" alt="" class="projects-card-img">
+
+
+                <div class="projects-card-detail">
+
+
+                    <div class="projects-card-tags">
+
+                       
+                            <h4 class="projects-card-tag1">UI Design</h4>
+
+                            <h4 class="projects-card-tag2">Business</h4>
+                        
+
+                    </div>
+
+
+                    <h3 class="projects-card-name">
+                        Website UI Designs
+                    </h3>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+<!--THE PROJECTSSECTION (TABLET VIEW) ENDS-->
+
+
+
+
+
+
+
+
+<!--THE TESTIMONIALS SECTION (PHONE VIEW) BEGINS-->
+
+
+    <section id="testimonials-section">
+
+
+                <h2 class="testimonials-header"><span class="testimonials-header-change">Clients'</span> Testimonials</h2>
+
+        
+
+
+
+                <div class="testimonial-slider-container">
+
+
+                    <div class="testimonial-slider-track">
+
+
+                        <div class="testimonials-card">
+
+                            <div class="testimonials-disc">
+
+                                <h5 class="testimonials-disc-text">" I really love Jason's creativity. I gave him the idea of how I wanted my blog to be, and the result was beyond my expectation. I will definately hire him again. Jason truly brought my blog idea to life—and even more. His creativity is top-tier. "</h5>
+
+                            </div>
+
+
+                            <div class="testimonials-disc-owner">
+
+                                <img src="{% static 'images/kemdi.jpg' %}" alt=""  class="testimonials-disc-img">
+
+
+                                <div class="testimonials-disc-names">
+
+                                    <h5 class="testimonials-main-name">Umeh Ikemdinachi</h5>
+
+                                    <h4 class="testimonials-main-work">Writer</h4>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!--Second card-->
+                        <div class="testimonials-card">
+
+                            <div class="testimonials-disc">
+
+                                <h5 class="testimonials-disc-text">                                        " I  really reccomend Chimdiadi to anyone out there who needs a website. I needed a website to get more people to know what I do as a blogger. I simply told him how I wanted the website to look like, and at the end, he gave me more than expected. I must really say that his work was neat and beautiful."</h5>
+
+                            </div>
+
+
+                            <div class="testimonials-disc-owner">
+
+                                <img src="{% static 'images/treasure.jpg' %}" alt=""  class="testimonials-disc-img">
+
+
+                                <div class="testimonials-disc-names">
+
+                                    <h5 class="testimonials-main-name">Treasure Nnaebue</h5>
+
+                                    <h4 class="testimonials-main-work">Nigerian Blogger</h4>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <!--Third card-->
+                        <div class="testimonials-card">
+
+                            <div class="testimonials-disc">
+
+                                <h5 class="testimonials-disc-text">                                        " Chimdiadi is the best. I am a Musician, and I really needed more people to follow me and view my songs on the different platforms I use. Then, I utilized Chimdiadi's service, and the website he made for me was sooooo awesome. I must really reccomend Chimdiadi to anyone out there in need of a website, his services are quite affordable. "
+</h5>
+
+                            </div>
+
+
+                            <div class="testimonials-disc-owner">
+
+                                <img src="{% static 'images/Bryan_Alex_Banner_img.jpg' %}" alt=""  class="testimonials-disc-img">
+
+
+                                <div class="testimonials-disc-names">
+
+                                    <h5 class="testimonials-main-name">Bryan Alex</h5>
+
+                                    <h4 class="testimonials-main-work">Musician</h4>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="slider-nav">
+                    <button id="testimonial-prev">&#10094;</button>
+                    <span id="testimonial-slider-indicator">1 / 3</span>
+                    <button id="testimonial-next">&#10095;</button>
+                </div>
+
+            
+
+
+
+
+
+    </section>
+
+
+<!--THE TESTIMONIALS SECTION (PHONE VIEW) ENDS-->
+
+
+
+
+<!--THE BLOG SECTION BEGINS-->
+
+
+<section id="blog">
+  <h2 class="blog-header">
+    <span class="blog-header-changer">My Life</span> & Blog
+  </h2>
+
+  <div class="slider-controls">
+    <button class="slider-btn" id="blog-prevBtn">&#10094;</button>
+
+    <div class="blog-post-container-wrapper">
+      <div class="blog-post-container" id="blog-slider">
+        {% for post in posts %}
+        <div class="blog-card">
+          {% if post.image_head %}
+          <img src="{{ post.image_head.url }}" alt="{{ post.post_title }}" class="blog-card-img">
+          {% endif %}
+          <div class="blog-card-tags">
+            <h4 class="blog-tag-name">{{ post.blog_tag }}</h4>
+            <h4 class="blog-tag-date">{{ post.post_date|date:"M d, Y" }}</h4>
+          </div>
+          <h2 class="blog-card-name">
+            <a href="{% url 'post_single' post.slug %}" class="recent_post_head_link">
+              {{ post.post_title }}
+            </a>
+          </h2>
+          <h5 class="blog-card-content">
+            {{ post.post_content|safe|truncatewords:15 }}
+          </h5>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <button class="slider-btn" id="blog-nextBtn">&#10095;</button>
+  </div>
+</section>
+
+
+
+
+<!--THE BLOG SECTION ENDS-->
+
+
+
+
+
+<!--THE CONTACT (PHONE AND TABLET) SECTION BEGINS-->
+
+
+<section id="contact-section">
+
+
+    <h2 class="contact-header"> <span class="contact-header-change">Let us</span> Connect</h2>
+
+
+
+    <div class="social-media-links">
+
+        <img src="{% static 'images/logo1.png' %}" alt="" class="logo">
+
+
+        <h5 class="social-media-links-disc">You can connect with me and see more about me via these social media platforms. I am waiting for you 😁</h5>
+
+
+            <div class="social-media-icons">
+
+                <a class="social-media-icon1" href="https://wa.me/2349112370651">
+                    
+                    <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+                <a class="social-media-icon1" href="https://www.instagram.com/chimdi_code_art?utm_source=qr&igsh=MWJ5ZHgxM2lzcmdhYw==">
+
+                    <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+                <a class="social-media-icon1" href="mailto:jasonprogrammer63@gmail.com">
+
+                    <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+                <a class="social-media-icon1" href="https://github.com/Chidi-code-art">
+
+                    <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+            </div>
+
+    </div>
+
+
+        <div class="quick-links">
+
+            <h3 class="quick-links-header">Quick Links</h3>
+
+
+            <a href="{% url 'home' %}"><h4 class="quick-main-link1">Home</h4></a>
+            <a href="{% url 'home' %}#about-section"><h4 class="quick-main-link1">About me</h4></a>
+            <a href="{% url 'home' %}#services_phone"><h4 class="quick-main-link1">Services</h4></a>
+            <a href="{% url 'home' %}#tablet-projects-section"><h4 class="quick-main-link1">Projects</h4></a>
+            <a href="{% url 'home' %}#blog"><h4 class="quick-main-link1">Blog</h4></a>
+
+        </div>
+
+
+
+
+        <div class="other-links">
+
+            <h3 class="other-links-header">Contact me</h3>
+
+
+            <a href="{% url 'home' %}"><h4 class="other-links-link1">www.chimdiadi.com</h4></a>
+            <a href="mailto:jasonprogrammer63@gmail.com"><h4 class="other-links-link1">jasonprogrammer63@gmail.com</h4></a>
+            <a href="https://wa.me/2349112370651"><h4 class="other-links-link1">+234 911 237 0651</h4></a>
+
+
+        </div>
+
+
+
+
+</section>
+
+
+<!--THE CONTACT (PHONE AND TABLET) SECTION ENDS-->
+
+
+
+<!--THE CONTACT (DESKTOP) SECTION BEGINS-->
+
+
+<section id="desktop-contact-section">
+
+
+    <h2 class="contact-header"> <span class="contact-header-change">Let us</span> Connect</h2>
+
+
+
+    <div class="desktop-contact-section-main">
+
+
+
+        <div class="social-media-links">
+
+            <img src="{% static 'images/logo1.png' %}" alt="" class="logo">
+
+
+            <h5 class="social-media-links-disc">You can connect with me and see more about me via these social media platforms. I am waiting for you 😁</h5>
+
+
+            <div class="social-media-icons">
+
+                <a class="social-media-icon1" href="https://wa.me/2349112370651">
+                    
+                    <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+                <a class="social-media-icon1" href="https://www.instagram.com/chimdi_code_art?utm_source=qr&igsh=MWJ5ZHgxM2lzcmdhYw==">
+
+                    <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+                <a class="social-media-icon1" href="mailto:jasonprogrammer63@gmail.com">
+
+                    <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+                <a class="social-media-icon1" href="https://github.com/Chidi-code-art">
+
+                    <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=395938" alt="" class="social-media-icon-img">
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-links">
+
+            <h3 class="quick-links-header">Quick Links</h3>
+
+
+            <a href="{% url 'home' %}"><h4 class="quick-main-link1">Home</h4></a>
+            <a href="{% url 'home' %}#tablet-about-section"><h4 class="quick-main-link1">About me</h4></a>
+            <a href="{% url 'home' %}#services_phone"><h4 class="quick-main-link1">Services</h4></a>
+            <a href="{% url 'home' %}#tablet-projects-section"><h4 class="quick-main-link1">Projects</h4></a>
+            <a href="{% url 'home' %}#blog"><h4 class="quick-main-link1">Blog</h4></a>
+
+        </div>
+
+
+
+
+        <div class="other-links">
+
+            <h3 class="other-links-header">Contact me</h3>
+
+
+            <a href="{% url 'home' %}"><h4 class="other-links-link1">www.chimdiadi.com</h4></a>
+            <a href="mailto:jasonprogrammer63@gmail.com"><h4 class="other-links-link1">jasonprogrammer63@gmail.com</h4></a>
+            <a href="https://wa.me/2349112370651"><h4 class="other-links-link1">+234 911 237 0651</h4></a>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</section>
+
+
+<!--THE CONTACT (DESKTOP) SECTION ENDS-->
+
+
+
+
+
+
+
+<!--THE FOOTER BEGINS-->
+
+
+<footer>
+
+
+    <h4 class="footer-text">Copyright © <span class="footer-change">Chimdiadi 2025</span></h4>
+
+
+</footer>
+
+
+<!--THE FOOTER ENDS-->
+
+
+
+
+
+<!--SCRIPTS FOR THE WEBSITE STARTS-->
+
+<!--Side menu functionality begins-->
+
+<script>
+
+
+// Side menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sideMenu = document.querySelector('.side-menu');
+    const body = document.body;
+    
+    menuToggle.addEventListener('click', function() {
+        sideMenu.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    });
+    
+    // Close menu when clicking on overlay
+    body.addEventListener('click', function(e) {
+        if (body.classList.contains('menu-open') && 
+            !sideMenu.contains(e.target) && 
+            e.target !== menuToggle && 
+            !menuToggle.contains(e.target)) {
+            sideMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+    });
+});
+
+
+</script>
+
+<!--Side menu functionality ends-->
+
+
+<!--Services slider begins-->
+
+<script>
+    const sliderTrack = document.querySelector('.slider-track');
+    const slides = document.querySelectorAll('.slider-track .services-card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicator = document.getElementById('slider-indicator');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+        const slideWidth = slides[0].offsetWidth;
+        sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        indicator.textContent = `${currentIndex + 1} / ${totalSlides}`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+
+    window.addEventListener('resize', updateSlider); // Recalculate on window resize
+
+    updateSlider(); // initial call
+</script>
+
+
+
+
+<!--Services slider ends-->
+
+
+
+
+<!--Testimonials slider begins-->
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const testimonial2SliderTrack = document.querySelector('.testimonial-slider-track');
+        const testimonial2Cards = document.querySelectorAll('.testimonials-card');
+        const testimonial2Prev = document.getElementById('testimonial-prev');
+        const testimonial2Next = document.getElementById('testimonial-next');
+        const testimonial2Indicator = document.getElementById('testimonial-slider-indicator');
+
+        let testimonial2Index = 0;
+
+        function updateTestimonial2Slider() {
+            const slideWidth = testimonial2Cards[0].offsetWidth;
+            testimonial2SliderTrack.style.transform = `translateX(-${testimonial2Index * slideWidth}px)`;
+            testimonial2Indicator.textContent = `${testimonial2Index + 1} / ${testimonial2Cards.length}`;
+        }
+
+        testimonial2Prev.addEventListener('click', () => {
+            if (testimonial2Index > 0) {
+                testimonial2Index--;
+                updateTestimonial2Slider();
+            }
+        });
+
+        testimonial2Next.addEventListener('click', () => {
+            if (testimonial2Index < testimonial2Cards.length - 1) {
+                testimonial2Index++;
+                updateTestimonial2Slider();
+            }
+        });
+
+        // Resize fix: Adjust on window resize to maintain responsiveness
+        window.addEventListener('resize', updateTestimonial2Slider);
+
+        // Initialize
+        updateTestimonial2Slider();
+    });
+</script>
+
+
+
+
+<!--Testimonials slider ends-->
+
+
+
+<!--Blog slider begins-->
+
+
+<script>
+  const blogSlider = document.getElementById('blog-slider');
+  const blogPrevBtn = document.getElementById('blog-prevBtn');
+  const blogNextBtn = document.getElementById('blog-nextBtn');
+
+  let blogIndex = 0;
+  let cardsPerSlide = 3;
+
+  function updateCardsPerSlide() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 500) {
+      cardsPerSlide = 1;
+    } else if (screenWidth <= 768) {
+      cardsPerSlide = 2;
+    } else {
+      cardsPerSlide = 3;
+    }
+  }
+
+  function slideBlogCards() {
+    const card = blogSlider.querySelector('.blog-card');
+    if (!card) return;
+
+    const cardWidth = card.offsetWidth + 16; // 16px gap
+    const totalCards = blogSlider.children.length;
+    const maxIndex = Math.ceil(totalCards / cardsPerSlide) - 1;
+
+    if (blogIndex < 0) blogIndex = 0;
+    if (blogIndex > maxIndex) blogIndex = maxIndex;
+
+    blogSlider.style.transform = `translateX(-${blogIndex * cardWidth * cardsPerSlide}px)`;
+  }
+
+  blogNextBtn.addEventListener('click', () => {
+    blogIndex++;
+    slideBlogCards();
+  });
+
+  blogPrevBtn.addEventListener('click', () => {
+    blogIndex--;
+    slideBlogCards();
+  });
+
+  window.addEventListener('resize', () => {
+    updateCardsPerSlide();
+    slideBlogCards();
+  });
+
+  // Init
+  updateCardsPerSlide();
+  slideBlogCards();
+</script>
+
+
+
+<!--Blog slider ends-->
+
+
+
+<!--SCRIPTS FOR THE WEBSITE ENDS-->
+
+</body>
+</html>
